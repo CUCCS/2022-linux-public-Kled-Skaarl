@@ -1,3 +1,3 @@
-## 这是我的作业仓库
+## 这是我的作业
 
-### This is  A_jian ’s  depository.
+### This is  A_jian ’s work.
