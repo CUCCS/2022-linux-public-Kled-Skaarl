@@ -33,11 +33,11 @@ lsb_release -a
 
   
 
-![image-20220303190730415](C:\Users\A_jian\Desktop\local_ubuntu_edition.png)
+![image-20220303190730415](./img/local_ubuntu_edition.png)
 
 - 阿里云平台
 
-  ![image-20220303190856890](C:\Users\A_jian\AppData\Roaming\Typora\typora-user-images\image-20220303190856890.png)
+![image-20220303190856890](./img/Aliyun_linux_edition.png)
 
 #### 2.查询当前 Linux 内核版本信息
 
@@ -45,7 +45,7 @@ lsb_release -a
 uname -srm
 ```
 
-![image-20220303191649565](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\get_Kernel version1.png)
+![image-20220303191649565](./img/get_Kernelversion1.png)
 
 uname命令显示多个系统信息，包括Linux内核体系结构，名称版本和发行版。
 
@@ -55,7 +55,7 @@ uname命令显示多个系统信息，包括Linux内核体系结构，名称版�
 hostnamectl
 ```
 
-![image-20220303192004611](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\get_Kernel version2.png)
+![image-20220303192004611](./img/get_Kernelversion2.png)
 
 hostnamectl实用程序是systemd的一部分，用于查询和更改系统主机名。 它还显示Linux发行版和内核版本。
 
@@ -67,7 +67,7 @@ hostnamectl实用程序是systemd的一部分，用于查询和更改系统主�
 ifconfig -a
 ```
 
-![image-20220303194516015](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\ifconfig -a.png)
+![image-20220303194516015](./img/ifconfig-a.png)
 
 当前工作网卡
 
@@ -75,13 +75,13 @@ ifconfig -a
 ifconfig
 ```
 
-![image-20220303194607774](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\ifconfig.png)
+![image-20220303194607774](./img/ifconfig.png)
 
 如果为ubuntu新添加了网卡，那么通过命令`ifconfig -a`可以看到所有网卡，但是可能有网卡没有工作，这个情况下使用`ifconfig`就会看到出现网卡比使用参数`-a`少，那没有出现的网卡就是没有生效。
 
 修改配置文件
 
-![image-20220303195152520](C:\Users\A_jian\AppData\Roaming\Typora\typora-user-images\image-20220303195152520.png)
+
 
 ```
 sudo netplan apply
@@ -89,7 +89,7 @@ sudo netplan apply
 
 生效！
 
-![image-20220303200622317](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\ifconfig_success.png)
+![image-20220303200622317](./img/ifconfig_success.png)
 
 #### 4.如何使用 `scp` 在「虚拟机和宿主机之间」、「本机和远程 Linux 系统之间」传输文件？
 
@@ -109,7 +109,7 @@ sudo netplan apply
 
   查询虚拟机ip
 
-  ![image-20220303231429702](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\linux_ip addr.png)
+  ![image-20220303231429702](./img/get_ip-address.png)
 
   将宿主机的test文件传输到虚拟机
 
@@ -117,7 +117,7 @@ sudo netplan apply
   C:\Users\A_jian>scp Desktop\test.txt ajian@192.xxx.xxx.xxx:test_folder
   ```
 
-  ![image-20220303232237338](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\from windows to linux.png)
+  ![image-20220303232237338](./img/fromwindowstolinux.png)
 
 - ##### 「本机和远程 Linux 系统之间」
 
@@ -127,7 +127,7 @@ sudo netplan apply
   ifconfig -a
   ```
 
-  ![image-20220306123741072](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\get_ip-address.png)
+  ![image-20220306123741072](./img/get_ip-address.png)
 
   传文件
 
@@ -135,9 +135,9 @@ sudo netplan apply
   scp test_folder root@101.133.133.91:remote_folder
   ```
 
-  ![image-20220306124508839](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\post_to_remote.png)
+  ![image-20220306124508839](./img/post_to_remote.png)
 
-  ![image-20220306124607781](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\post_result.png)
+  ![image-20220306124607781](./img/post_result.png)
 
 
 
@@ -161,7 +161,7 @@ sudo netplan apply
   ssh root@101.133.160.228
   ```
 
-  ![image-20220306145259337](C:\Users\A_jian\Desktop\2022-linux-public-Kled-Skaarl\chap0x01\img\login.png)
+  ![image-20220306145259337](./img/login.png)
 
 
 
