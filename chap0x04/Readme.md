@@ -71,7 +71,7 @@ sudo apt-get install imagemagick
 
 1.下载数据`wget https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv`
 
-2.编写[task2.sh](./code/tash2.sh)
+2.编写[task2.sh](./code/task2.sh)
 
 3.执行结果见[task2-3_result.md](./task2-3_result.md)
 
