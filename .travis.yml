@@ -8,12 +8,12 @@ before_install:
   - sudo apt-get install ghostscript
   - ls -l
 script:
+  - 7z x -ot web_log.tsv.7z
+  - cd chap0x04/code
   - wget "https://c4pr1c3.gitee.io/linuxsysadmin/exp/chap0x04/worldcupplayerinfo.tsv"
   - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
-  - 7z x -ot web_log.tsv.7z
   - ls -l
-  - cd chap0x04/code
-  - echo "------------------------------------------------------------"
+  - echo "---------------------------"
   - echo "Task1"
   - bash task1.sh -h
   - bash task1.sh -q 35
@@ -22,14 +22,14 @@ script:
   - bash task1.sh -p linux
   - bash task1.sh -s linux
   - bash task1.sh -t
-  - echo "------------------------------------------------------------"
+  - echo "---------------------------"
   - echo "Task2"
   - bash task2.sh -h
   - bash task2.sh -s 
   - bash task2.sh -p 
   - bash task2.sh -n 
   - bash task2.sh -a 
-  - echo "------------------------------------------------------------"
+  - echo "---------------------------"
   - echo "Task3"
   - bash task3.sh -h
   - bash task3.sh -o 
