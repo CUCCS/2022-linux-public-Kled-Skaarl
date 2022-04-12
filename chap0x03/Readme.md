@@ -85,7 +85,7 @@ $ loginctl list-users
 $ loginctl show-user ruanyf
 ```
 
-[![asciicast](https://asciinema.org/a/a8osUFZ4VxxF8P13dCSt1GaWH.svg)](https://asciinema.org/a/a8osUFZ4VxxF8P13dCSt1GaWH)
+[![asciicast](https://asciinema.org/a/486385.svg)](https://asciinema.org/a/486385)
 
 - systemctl list-units
 
@@ -175,7 +175,7 @@ $ systemctl list-unit-files --type=service
 $ systemctl cat atd.service
 ```
 
-[![asciicast](https://asciinema.org/a/O72l1vreJ9y1NLlJRWctC6Xz4.svg)](https://asciinema.org/a/O72l1vreJ9y1NLlJRWctC6Xz4)
+[![asciicast](https://asciinema.org/a/486386.svg)](https://asciinema.org/a/486386)
 
 - Target
 
@@ -198,7 +198,7 @@ $ sudo systemctl set-default multi-user.target
 $ sudo systemctl isolate multi-user.targe
 ```
 
-[![asciicast](https://asciinema.org/a/G7HAdAKnDxQQcHwZSvxj7okDo.svg)](https://asciinema.org/a/G7HAdAKnDxQQcHwZSvxj7okDo)
+[![asciicast](https://asciinema.org/a/486388.svg)](https://asciinema.org/a/486388)](https://asciinema.org/a/G7HAdAKnDxQQcHwZSvxj7okDo)
 
 - 日志管理
 
@@ -285,7 +285,7 @@ $ sudo journalctl --vacuum-size=1G
 $ sudo journalctl --vacuum-time=1years
 ```
 
-[![asciicast](https://asciinema.org/a/lGMR4iYqpxVLvzsmnqWueRAWt.svg)](https://asciinema.org/a/lGMR4iYqpxVLvzsmnqWueRAWt)
+[![asciicast](https://asciinema.org/a/486389.svg)](https://asciinema.org/a/486389)
 
 #### 2.Systemd实战操作
 
@@ -352,8 +352,6 @@ WantedBy=network-online.target
 # 重新加载配置文件
 $ sudo systemctl daemon-reload
 ```
-
-[![asciicast](https://asciinema.org/a/LbdggGAScH8uMxHiDCqbffMA1.svg)](https://asciinema.org/a/LbdggGAScH8uMxHiDCqbffMA1)
 
 - 如何通过systemd设置实现一个脚本在任何情况下被杀死之后会立即重新启动？实现杀不死？
 
