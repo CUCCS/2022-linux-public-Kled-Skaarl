@@ -65,6 +65,8 @@ function specificURL {
     END { for(i in host) {printf("%40s\t%d\n",i,host[i]);} }
     ' web_log.tsv | sort -n -k 2 -r | head -100
 }
+
+# 函数主体
 while [ "$1" != "" ];do
     case "$1" in
        "-o")

@@ -11,7 +11,6 @@ function help {
 }
 
 # 对jpeg格式图片进行图片质量压缩
-# convert filename1 -quality 50 filename2
 function compressQuality {
     Q=$1 # 质量因子
     for i in *;do
@@ -23,7 +22,6 @@ function compressQuality {
 }
 
 # 对jpeg/png/svg格式图片在保持原始宽高比的前提下压缩分辨率
-# convert filename1 -resize 50% filename2
 function compressResolution {
     R=$1
     for i in *;do
@@ -35,7 +33,6 @@ function compressResolution {
 }
 
 # 对图片批量添加自定义文本水印
-# convert filename1 -pointsize 50 -fill black -gravity center -draw "text 10,10 'Works like magick' " filename2
 function watermark {
     for i in *;do
         type=${i##*.}
@@ -46,7 +43,6 @@ function watermark {
 }
 
 # 批量重命名（统一添加文件名前缀或后缀，不影响原始文件扩展名）
-# mv filename1 filename2
 function prefix {
     for i in *;do
         type=${i##*.}
@@ -66,7 +62,6 @@ function suffix {
 }
 
 # 将png/svg图片统一转换为jpg格式图片
-# convert xxx.png xxx.jpg
 function transform2Jpg {
     for i in *;do
         type=${i##*.}
@@ -77,6 +72,7 @@ function transform2Jpg {
     done
 }
 
+# 函数主体
 while [ "$1" != "" ];do
 case "$1" in
     "-q")
