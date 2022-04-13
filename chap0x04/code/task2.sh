@@ -46,19 +46,19 @@ function countPosition {
 # 考虑并列
 function maxName {
     awk -F "\t" '
-        BEGIN {mx=-1; mi=1000;}
+        BEGIN {max=0; min=200;}
         $9!="Player" {
             len=length($9);
             names[$9]=len;
-            mx=len>mx?len:mx;
-            mi=len<mi?len:mi;
+            max=len>max?len:max;
+            min=len<min?len:min;
         }
         END {
             for(i in names) {
-                if(names[i]==mx) {
-                    printf("The longest name is %s\n", i);
-                } else  if(names[i]==mi) {
-                    printf("The shortest name is %s\n", i);
+                if(names[i]==max) {
+                    printf("最长的名字包括 %s\n", i);
+                } else  if(names[i]==min) {
+                    printf("最短的名字包括 %s\n", i);
                 }
             }
         }' worldcupplayerinfo.tsv
@@ -76,7 +76,7 @@ function maxAge {
             mi=age<mi?age:mi;
         }
         END {
-            printf("The oldest age is %d, who is\n", mx);
+            printf("最大年龄是 is %d, Ta(们)是\n", mx);
             for(i in names) {
                 if(names[i]==mx) { printf("%s\n", i); }
             }
