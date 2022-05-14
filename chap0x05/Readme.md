@@ -183,11 +183,11 @@ sudo chown -R www-data.www-data /var/www/html/dvwa.sec.cuc.edu.cn
 - 访问管理面板http://192.168.153.128:8081/verynginx/index.html，登录用户名和密码为 `verynginx` / `verynginx`
 - 配置Matcher
 
-![image-20220514095803413](.\img\Matcher.png)
+![image-20220514095803413](./img/Matcher.png)
 
-![image-20220514100850809](\img\Schemelock.png)
+![image-20220514100850809](./img./Schemelock.png)
 
-![image-20220514101458870](\img\proxy.png)
+![image-20220514101458870](./img/proxy.png)
 
 #### 安全加固要求
 
@@ -195,73 +195,73 @@ sudo chown -R www-data.www-data /var/www/html/dvwa.sec.cuc.edu.cn
 
 添加matcher
 
-![image-20220514101642547](F:\UNIVERSITY\大二（下学期）\Linux\2022-linux-public-Kled-Skaarl\chap0x05\img\ip_matcher.png)
+![image-20220514101642547](./img/ip_matcher.png)
 
 添加自定义response以及filter
 
 结果：
 
-![image-20220514102103581](\img\notpermitted.png)
+![image-20220514102103581](./img/notpermitted.png)
 
 2.[Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/)只允许白名单上的访客来源IP，其他来源的IP访问均向访客展示自定义的友好错误提示信息页面-2
 
 Matcher
 
-![image-20220514103804590](\img\Matcher2.png)
+![image-20220514103804590](./img/Matcher2.png)
 
 Response
 
-![image-20220514103908107](\img\response.png)
+![image-20220514103908107](./img/response.png)
 
 Filter
 
-![image-20220514103955054](\img\fillter.png)
+![image-20220514103955054](./img/fillter.png)
 
 结果：
 
-![image-20220514104341053](\img\erro1.png)
+![image-20220514104341053](./img/erro1.png)
 
 3.在不升级Wordpress版本的情况下，通过定制[VeryNginx](https://github.com/alexazhou/VeryNginx)的访问控制策略规则，热修复WordPress < 4.7.1 - Username Enumeration
 
 Matcher
 
-![image-20220514104452462](\img\matcher3.png)
+![image-20220514104452462](./img/matcher3.png)
 
 Fillter
 
-![image-20220514104535809](\img\fillter2.png)
+![image-20220514104535809](./img/fillter2.png)
 
 结果：
 
-![image-20220514104613031](F:\UNIVERSITY\大二（下学期）\Linux\2022-linux-public-Kled-Skaarl\chap0x05\img\erro2.png)
+![image-20220514104613031](./img/erro2.png)
 
 4.通过配置[VeryNginx](https://github.com/alexazhou/VeryNginx)的Filter规则实现对[Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/)的SQL注入实验在低安全等级条件下进行防护
 
 Matcher
 
-![image-20220514104710311](\img\matcher4.png)
+![image-20220514104710311](./img/matcher4.png)
 
 Fillter
 
-![image-20220514104856675](F:\UNIVERSITY\大二（下学期）\Linux\2022-linux-public-Kled-Skaarl\chap0x05\img\fillter3.png)
+![image-20220514104856675](./img/fillter3.png)
 
 结果：
 
-![image-20220514104933901](C:\Users\A_jian\AppData\Roaming\Typora\typora-user-images\image-20220514104933901.png)
+![image-20220514104933901](./img/erro5.png)
 
 5.[VeryNginx](https://github.com/alexazhou/VeryNginx)的Web管理页面仅允许白名单上的访客来源IP，其他来源的IP访问均向访客展示自定义的**友好错误提示信息页面-3**
 
 Matcher
 
-![image-20220514105026365](\img\matcher5.png)
+![image-20220514105026365](./img/matcher5.png)
 
 Filter
 
-![image-20220514105215123](\img\fillter4.png)
+![image-20220514105215123](./img/fillter4.png)
 
 结果：
 
-![image-20220514105258435](\img\response2.png)
+![image-20220514105258435](./img/response2.png)
 
 6.通过定制VeryNginx的访问控制策略规则实现以下
 
@@ -269,23 +269,23 @@ Filter
 - 限制Wordpress站点的单IP访问速率为每秒请求数 < 20
 - 超过访问频率限制的请求直接返回自定义**错误提示信息页面-4**
 
-![image-20220514105425440](\img\response3.png)
+![image-20220514105425440](./img/response3.png)
 
-![image-20220514105500378](\img\limit.png)
+![image-20220514105500378](./img/limit.png)
 
 结果：
 
-![image-20220514105549290](\img\erro3.png)
+![image-20220514105549290](./img/erro3.png)
 
 - 禁止curl访问
 
-![image-20220514105659361](\img\matcher6.png)
+![image-20220514105659361](./img/matcher6.png)
 
-![image-20220514105804694](\img\fillter5.png)
+![image-20220514105804694](./img/fillter5.png)
 
 结果：
 
-![image-20220514111716995](img\erro4.png)
+![image-20220514111716995](./img/erro4.png)
 
 ### 问题及解决
 
