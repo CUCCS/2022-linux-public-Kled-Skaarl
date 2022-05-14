@@ -136,7 +136,9 @@ sudo apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlr
 sudo systemctl restart php7.4-fpm
 ```
 
-使用`wp.sec.cuc.edu.cn/wordpress/wp-admin/`访问wordpress![image-20220509162642994](./img/gettowordpress.png)
+使用`wp.sec.cuc.edu.cn/wordpress/wp-admin/`访问wordpress
+
+![ima](./img/gettowordpress.png)
 
 #### DVWA
 
