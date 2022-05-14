@@ -187,7 +187,7 @@ sudo chown -R www-data.www-data /var/www/html/dvwa.sec.cuc.edu.cn
 
 ![image-20220514095803413](./img/Matcher.png)
 
-![image-20220514100850809](./img./Schemelock.png)
+![image-20220514109](./img/schemelock.png)
 
 ![image-20220514101458870](./img/proxy.png)
 
@@ -209,7 +209,7 @@ sudo chown -R www-data.www-data /var/www/html/dvwa.sec.cuc.edu.cn
 
 Matcher
 
-![image-20220514103804590](./img/Matcher2.png)
+![image-20220514103804590](./img/matcher2.png)
 
 Response
 
